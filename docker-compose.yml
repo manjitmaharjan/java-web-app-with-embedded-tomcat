@@ -1,13 +1,9 @@
 version: '3.3'
-networks:
-  mynetwork:
-    external:
-      name: test
 services:
   app:
     build: ./
-    image: app
-    container_name: app
+    image: test6
+    container_name: test6
     ports:
       - "8888:8888"
     restart: always
