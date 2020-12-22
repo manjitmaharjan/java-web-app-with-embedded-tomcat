@@ -7,6 +7,5 @@ services:
     ports:
       - "8888:8888"
     restart: always
-    networks:
-      - test
+    
     
