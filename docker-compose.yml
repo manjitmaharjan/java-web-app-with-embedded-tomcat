@@ -5,7 +5,7 @@ services:
     image: test6
     container_name: test6
     ports:
-      - "8888:8888"
+      - "8866:8080"
     restart: always
     
     
