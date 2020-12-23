@@ -11,7 +11,8 @@
 #ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /app.jar"]
 #ENTRYPOINT [ "sh", "-c", "java -jar/java-web-app-with-embedded-tomcat-1.0.0-SNAPSHOT.jar" ]
 FROM openjdk:8
-ARG JAR_FILE=./target/*.jar
+#ARG JAR_FILE=./target/*.jar
 RUN mkdir applicantsDocuments
-COPY ${JAR_FILE} /app.jar
+#COPY ${JAR_FILE} /app.jar
+COPY target/java-web-app-with-embedded-tomcat-1.0.0-SNAPSHOT.jar /app.jar
 ENTRYPOINT [ "sh", "-c", "java -jar /app.jar"]
