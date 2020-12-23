@@ -14,4 +14,4 @@ FROM openjdk:8
 ARG JAR_FILE=./target/*.jar
 RUN mkdir applicantsDocuments
 COPY ${JAR_FILE} app.jar
-ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /app.jar"]
+ENTRYPOINT [ "sh", "-c", "java -jar /app.jar"]
